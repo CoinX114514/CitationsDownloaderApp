@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CitationDownloaderApp" />
+        <module name="citation-downloader" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CitationDownloaderApp" target="20" />
+    </bytecodeTargetLevel>
   </component>
 </project>

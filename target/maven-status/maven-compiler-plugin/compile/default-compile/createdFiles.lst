@@ -1,0 +1,4 @@
+com/example/citationdownloader/UI/MainUI.class
+com/example/citationdownloader/downloaders/FileDownloader.class
+com/example/citationdownloader/models/PDFLink.class
+com/example/citationdownloader/parsers/PDFHyperlinkExtractor.class
