@@ -46,6 +46,13 @@
             <artifactId>logback-classic</artifactId>
             <version>1.4.7</version>
         </dependency>
+
+        <!-- Annotation Dependencies -->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>24.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

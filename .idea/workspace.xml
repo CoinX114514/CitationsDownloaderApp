@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65b5cbd3-18b7-47e5-a015-efd2809ac5d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/citationdownloader/UI/MainUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/citationdownloader/downloaders/FileDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/citationdownloader/models/PDFLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/citationdownloader/parsers/PDFHyperlinkExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/UI/MainUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/downloaders/APIDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/downloaders/CitationMetadataFetcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/downloaders/FileDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/parsers/CitationParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.example.citationdownloader/parsers/PDFHyperlinkExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/UI/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/UI/MainUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/downloaders/APIDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/downloaders/APIDownloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/downloaders/CitationMetadataFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/downloaders/CitationMetadataFetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/downloaders/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/parsers/CitationParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/parsers/CitationParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/citationdownloader/parsers/PDFHyperlinkExtractor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/com/example/citationdownloader/main.class" beforeDir="false" />
-    </list>
+    <list default="true" id="65b5cbd3-18b7-47e5-a015-efd2809ac5d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +104,7 @@
       <workItem from="1736800473968" duration="3806000" />
       <workItem from="1736880394762" duration="257000" />
       <workItem from="1736880670769" duration="114000" />
-      <workItem from="1736968128109" duration="1539000" />
+      <workItem from="1736968128109" duration="2206000" />
     </task>
     <servers />
   </component>

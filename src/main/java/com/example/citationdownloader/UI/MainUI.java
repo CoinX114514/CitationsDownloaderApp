@@ -3,7 +3,6 @@ package com.example.citationdownloader.UI;
 import com.example.citationdownloader.models.PDFLink;
 import com.example.citationdownloader.parsers.PDFHyperlinkExtractor;
 import com.example.citationdownloader.downloaders.FileDownloader;
-
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
@@ -13,10 +12,17 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.io.File;
 import java.util.List;
 
-public class MainUI extends Application {
+/**
+ * Main UI class for the Citation Downloader application.
+ * Handles the graphical user interface and user interactions.
+ */
+public final class MainUI extends Application {
     private TextArea resultsArea;
     private Label statusLabel;
     private FileDownloader fileDownloader;
@@ -24,41 +30,57 @@ public class MainUI extends Application {
     private VBox linksBox;
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(@NotNull final Stage primaryStage) {
+        initializeComponents();
+        setupMainWindow(primaryStage);
+    }
+
+    /**
+     * Initializes the main components of the application.
+     */
+    private void initializeComponents() {
         fileDownloader = new FileDownloader();
         linkExtractor = new PDFHyperlinkExtractor();
+    }
 
+    /**
+     * Sets up the main window with tabs and content.
+     *
+     * @param primaryStage The primary stage for the application
+     */
+    private void setupMainWindow(@NotNull final Stage primaryStage) {
         try {
-            // Create tab pane
             TabPane tabPane = new TabPane();
             
-            // PDF Processing Tab
-            Tab pdfTab = new Tab("PDF Processing");
-            pdfTab.setContent(createPDFProcessingView());
-            pdfTab.setClosable(false);
+            // Create and configure tabs
+            Tab pdfTab = createTab("PDF Processing", createPDFProcessingView());
+            Tab urlTab = createTab("URL Input", createURLInputView());
+            Tab doiTab = createTab("DOI Input", createDOIInputView());
             
-            // URL Input Tab
-            Tab urlTab = new Tab("URL Input");
-            urlTab.setContent(createURLInputView());
-            urlTab.setClosable(false);
-            
-            // DOI Input Tab
-            Tab doiTab = new Tab("DOI Input");
-            doiTab.setContent(createDOIInputView());
-            doiTab.setClosable(false);
-            
-            // Add all tabs
             tabPane.getTabs().addAll(pdfTab, urlTab, doiTab);
 
-            // Create the scene
             Scene scene = new Scene(tabPane, 800, 600);
             primaryStage.setTitle("Citation Extractor");
             primaryStage.setScene(scene);
             primaryStage.show();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Creates a non-closable tab with the given title and content.
+     *
+     * @param title The title of the tab
+     * @param content The content to display in the tab
+     * @return The configured tab
+     */
+    @NotNull
+    private Tab createTab(@NotNull final String title, @NotNull final VBox content) {
+        Tab tab = new Tab(title);
+        tab.setContent(content);
+        tab.setClosable(false);
+        return tab;
     }
 
     private VBox createPDFProcessingView() {
