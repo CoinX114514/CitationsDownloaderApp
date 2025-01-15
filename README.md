@@ -50,24 +50,6 @@ A JavaFX application that helps researchers and academics efficiently extract an
 2. Enter a DOI (e.g., 10.1000/xyz123)
 3. Click "Process DOI" to fetch paper information
 
-## Project Structure
-
-- `src/main/java/com/example/citationdownloader/`: Main application code
-- `src/main/resources/com/example/citationdownloader/`: UI resources
-- `src/test/java/com/example/citationdownloader/`: Test classes
-- `pom.xml`: Maven build configuration
-  src/main/java/com/example/citationdownloader/
-  ├── UI/
-  │ └── MainUI.java # Main user interface
-  ├── models/
-  │ └── PDFLink.java # Data model for PDF links
-  ├── parsers/
-  │ └── PDFHyperlinkExtractor.java # PDF parsing logic
-  └── downloaders/
-  └── FileDownloader.java # File download handling
-
-
-
 ## Contributing
 
 1. Fork the repository
