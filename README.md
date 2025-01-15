@@ -82,4 +82,4 @@ For support, please open an issue in the GitHub repository or contact the mainta
 
 ---
 
-Made with ❤️ for the academic community
+Some build by Cursor, some from CoinX. No need for star since it is for personal use.
